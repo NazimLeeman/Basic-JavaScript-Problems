@@ -1,0 +1,13 @@
+function confirmEnding(str, target) {
+  let targetLength = str.length - target.length;
+  let matching = "";
+  for (let i = targetLength; i < str.length; i++) {
+    matching += str[i]
+  }
+  if (matching === target) {
+    return true;
+  }
+    return false;
+}
+
+confirmEnding("Bastian", "n");
