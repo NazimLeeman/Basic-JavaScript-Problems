@@ -18,3 +18,31 @@ function findLongestWordLength(str) {
 }
 
 findLongestWordLength("The quick brown fox jumped over the lazy dog");
+
+
+function findLongestWordLength(str) {
+  let words = str.split(' ');
+  let longest = 0;
+  let maxLength = "";
+
+  for (let i = 0; i < words.length; i++) {
+    if (words[i].length > longest) {
+      longest = words[i].length
+      maxLength = words[i];
+    }
+  }
+
+  return maxLength;
+}
+
+
+console.log(findLongestWordLength("The quick brownk"));
+
+function longest(str){
+
+    str = str.split(" ")
+
+    return str.sort((a, b) => b.length - a.length)[0]
+    }
+    
+console.log(longest("Hello guys this is geeksforgeeks"+ " where students learn programming"))
