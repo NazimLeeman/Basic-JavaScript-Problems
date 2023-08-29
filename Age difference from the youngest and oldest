@@ -1,0 +1,27 @@
+function initials (obj) {
+  let newstring = obj.map((person) => person.age);
+  return newarray = [Math.min(...newstring), Math.max(...newstring), Math.max(...newstring) - Math.min(...newstring)];
+}
+
+console.log(initials([
+  {
+    name: "John",
+    age: 13,
+  },
+  {
+    name: "Mark",
+    age: 56,
+  },
+  {
+    name: "Rachel",
+    age: 45,
+  },
+  {
+    name: "Nate",
+    age: 67,
+  },
+  {
+    name: "Jennifer",
+    age: 65,
+  },
+]));
